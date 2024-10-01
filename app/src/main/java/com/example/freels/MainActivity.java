@@ -41,5 +41,7 @@ public class MainActivity extends AppCompatActivity {
         gajiMaksimum.setText(teksGajiMaksimum);
         ringkasanPekerjaan.setText(teksRingkasanPekerjaan);
         kualfikasiPekerjaan.setText(teksKualifikasiPekerjaan);
+
+
     }
 }
