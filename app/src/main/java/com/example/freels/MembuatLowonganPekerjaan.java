@@ -17,7 +17,6 @@ import java.util.ArrayList;
 
 public class MembuatLowonganPekerjaan extends AppCompatActivity{
 
-
     private EditText namaPerusahaan;
     private EditText pekerjaan;
     private Spinner spinnerLokasi;
@@ -28,7 +27,6 @@ public class MembuatLowonganPekerjaan extends AppCompatActivity{
     private EditText kualifikasiPekerjaan;
     private Button btUnggahLogo;
     private Button btUnggahLowongan;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +48,6 @@ public class MembuatLowonganPekerjaan extends AppCompatActivity{
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String text = adapterView.getItemAtPosition(i).toString();
-                Toast.makeText(MembuatLowonganPekerjaan.this, text, Toast.LENGTH_SHORT).show();
 
             }
 
@@ -103,7 +100,6 @@ public class MembuatLowonganPekerjaan extends AppCompatActivity{
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String text = adapterView.getItemAtPosition(i).toString();
-                Toast.makeText(MembuatLowonganPekerjaan.this, text, Toast.LENGTH_SHORT).show();
 
             }
 
@@ -133,7 +129,7 @@ public class MembuatLowonganPekerjaan extends AppCompatActivity{
         this.btUnggahLowongan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MembuatLowonganPekerjaan.this, MainActivity.class);
+                Intent i = new Intent(MembuatLowonganPekerjaan.this, BetaHomePage.class);
                 String teksNamaPerusahaan = namaPerusahaan.getText().toString();
                 i.putExtra("namaPerusahaan", teksNamaPerusahaan);
 

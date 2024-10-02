@@ -2,16 +2,24 @@ package com.example.freels;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+public class BetaHomePage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_beta_home_page);
 
         TextView namaPerusahaan = findViewById(R.id.namaPerusahaan);
         TextView pekerjaan = findViewById(R.id.pekerjaan);
@@ -42,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
         ringkasanPekerjaan.setText(teksRingkasanPekerjaan);
         kualfikasiPekerjaan.setText(teksKualifikasiPekerjaan);
 
-
+        FloatingActionButton fab = findViewById(R.id.ButtonAddLowongan);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(BetaHomePage.this, MembuatLowonganPekerjaan.class);
+                startActivity(intent);
+            }
+        });
     }
 }

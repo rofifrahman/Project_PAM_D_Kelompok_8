@@ -220,7 +220,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="UnggahLowongan"
+                    android:text="Unggah Lowongan"
                     app:layout_constraintTop_toBottomOf="@+id/UnggahLogoPerusahaan" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
