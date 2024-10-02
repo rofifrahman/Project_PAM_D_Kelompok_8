@@ -23,13 +23,13 @@
         </activity>
         <activity
             android:name=".Applyjobs2"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Applyjobs1"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Homepage"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MembuatLowonganPekerjaan"
             android:exported="false">
