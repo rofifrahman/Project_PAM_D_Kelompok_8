@@ -52,6 +52,48 @@ public class Homepage extends AppCompatActivity implements View.OnClickListener 
 
         this.btUnggahLowongan.setOnClickListener(Homepage.this);
 
+        TextView role1 = findViewById(R.id.Role1);
+        TextView perusahaan1 = findViewById(R.id.Perusahaan1);
+        TextView lokasi1 = findViewById(R.id.lokasi1);
+        TextView rincian1 = findViewById(R.id.rincian1);
+        TextView role2 = findViewById(R.id.Role2);
+        TextView perusahaan2 = findViewById(R.id.Perusahaan2);
+        TextView lokasi2 = findViewById(R.id.lokasi2);
+        TextView rincian2 = findViewById(R.id.rincian2);
+        TextView role3 = findViewById(R.id.Role3);
+        TextView perusahaan3 = findViewById(R.id.Perusahaan3);
+        TextView lokasi3 = findViewById(R.id.lokasi3);
+        TextView rincian3 = findViewById(R.id.rincian3);
+
+
+        Intent homepage = getIntent();
+
+        String teksRole1 = homepage.getStringExtra("Role1");
+        String teksPerusahaan1 = homepage.getStringExtra("Perusahaan1");
+        String teksLokasi1 = homepage.getStringExtra("lokasi1");
+        String teksRincian1 = homepage.getStringExtra("rincian1");
+        String teksRole2 = homepage.getStringExtra("Role2");
+        String teksPerusahaan2 = homepage.getStringExtra("Perusahaan2");
+        String teksLokasi2 = homepage.getStringExtra("lokasi2");
+        String teksRincian2 = homepage.getStringExtra("rincian2");
+        String teksRole3 = homepage.getStringExtra("Role3");
+        String teksPerusahaan3 = homepage.getStringExtra("Perusahaan3");
+        String teksLokasi3 = homepage.getStringExtra("lokasi3");
+        String teksRincian3 = homepage.getStringExtra("rincian3");
+
+        role1.setText(teksRole1);
+        perusahaan1.setText(teksPerusahaan1);
+        lokasi1.setText(teksLokasi1);
+        rincian1.setText(teksRincian1);
+        role2.setText(teksRole2);
+        perusahaan2.setText(teksPerusahaan2);
+        lokasi2.setText(teksLokasi2);
+        rincian2.setText(teksRincian2);
+        role3.setText(teksRole3);
+        perusahaan3.setText(teksPerusahaan3);
+        lokasi3.setText(teksLokasi3);
+        rincian3.setText(teksRincian3);
+
     }
 
     @Override
@@ -96,53 +138,4 @@ public class Homepage extends AppCompatActivity implements View.OnClickListener 
     }
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_homepage);
-
-        TextView role1 = findViewById(R.id.Role1);
-        TextView perusahaan1 = findViewById(R.id.Perusahaan1);
-        TextView lokasi1 = findViewById(R.id.lokasi1);
-        TextView rincian1 = findViewById(R.id.rincian1);
-        TextView role2 = findViewById(R.id.Role2);
-        TextView perusahaan2 = findViewById(R.id.Perusahaan2);
-        TextView lokasi2 = findViewById(R.id.lokasi2);
-        TextView rincian2 = findViewById(R.id.rincian2);
-        TextView role3 = findViewById(R.id.Role3);
-        TextView perusahaan3 = findViewById(R.id.Perusahaan3);
-        TextView lokasi3 = findViewById(R.id.lokasi3);
-        TextView rincian3 = findViewById(R.id.rincian3);
-
-
-        Intent homepage = getIntent();
-
-        String teksRole1 = homepage.getStringExtra("Role1");
-        String teksPerusahaan1 = homepage.getStringExtra("Perusahaan1");
-        String teksLokasi1 = homepage.getStringExtra("lokasi1");
-        String teksRincian1 = homepage.getStringExtra("rincian1");
-        String teksRole2 = homepage.getStringExtra("Role2");
-        String teksPerusahaan2 = homepage.getStringExtra("Perusahaan2");
-        String teksLokasi2 = homepage.getStringExtra("lokasi2");
-        String teksRincian2 = homepage.getStringExtra("rincian2");
-        String teksRole3 = homepage.getStringExtra("Role3");
-        String teksPerusahaan3 = homepage.getStringExtra("Perusahaan3");
-        String teksLokasi3 = homepage.getStringExtra("lokasi3");
-        String teksRincian3 = homepage.getStringExtra("rincian3");
-
-        role1.setText(teksRole1);
-        perusahaan1.setText(teksPerusahaan1);
-        lokasi1.setText(teksLokasi1);
-        rincian1.setText(teksRincian1);
-        role2.setText(teksRole2);
-        perusahaan2.setText(teksPerusahaan2);
-        lokasi2.setText(teksLokasi2);
-        rincian2.setText(teksRincian2);
-        role3.setText(teksRole3);
-        perusahaan3.setText(teksPerusahaan3);
-        lokasi3.setText(teksLokasi3);
-        rincian3.setText(teksRincian3);
-
-    }
 }

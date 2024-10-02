@@ -51,6 +51,51 @@ public class Applyjobs2 extends AppCompatActivity implements View.OnClickListene
         this.btUnggahLowongan = this.findViewById(R.id.UnggahLowongan);
 
         this.btUnggahLowongan.setOnClickListener(Applyjobs2.this);
+
+        TextView namaPelamar = findViewById(R.id.nama_pelamar);
+        TextView usia = findViewById(R.id.usia);
+        TextView alamat = findViewById(R.id.alamat);
+        TextView editTextText = findViewById(R.id.editTextText);
+        TextView editTextText2 = findViewById(R.id.editTextText2);
+        TextView editTextText3 = findViewById(R.id.editTextText3);
+        TextView editTextText4 = findViewById(R.id.editTextText4);
+        TextView editTextText5 = findViewById(R.id.editTextText5);
+        TextView editTextText6 = findViewById(R.id.editTextText6);
+        TextView editTextText7 = findViewById(R.id.editTextText7);
+        TextView editTextText8 = findViewById(R.id.editTextText8);
+        TextView editTextText9 = findViewById(R.id.editTextText9);
+        TextView keterangan_tambahan = findViewById(R.id.keterangan_tambahan);
+
+        Intent apply2 = getIntent();
+
+        String teksNamaPelamar = apply2.getStringExtra("namaPelamar");
+        String teksUsia = apply2.getStringExtra("usia");
+        String teksAlamat = apply2.getStringExtra("alamat");
+        String teksEditTextText = apply2.getStringExtra("editTextText");
+        String teksEditTextText2 = apply2.getStringExtra("editTextText2");
+        String teksEditTextText3 = apply2.getStringExtra("editTextText3");
+        String teksEditTextText4 = apply2.getStringExtra("editTextText4");
+        String teksEditTextText5 = apply2.getStringExtra("editTextText5");
+        String teksEditTextText6 = apply2.getStringExtra("editTextText6");
+        String teksEditTextText7 = apply2.getStringExtra("editTextText7");
+        String teksEditTextText8 = apply2.getStringExtra("editTextText8");
+        String teksEditTextText9 = apply2.getStringExtra("editTextText9");
+        String teksKeterangan_tambahan = apply2.getStringExtra("keterangan_tambahan");
+
+        namaPelamar.setText(teksNamaPelamar);
+        usia.setText(teksUsia);
+        alamat.setText(teksAlamat);
+        editTextText.setText(teksEditTextText);
+        editTextText2.setText(teksEditTextText2);
+        editTextText3.setText(teksEditTextText3);
+        editTextText4.setText(teksEditTextText4);
+        editTextText5.setText(teksEditTextText5);
+        editTextText6.setText(teksEditTextText6);
+        editTextText7.setText(teksEditTextText7);
+        editTextText8.setText(teksEditTextText8);
+        editTextText9.setText(teksEditTextText9);
+        keterangan_tambahan.setText(teksKeterangan_tambahan);
+
     }
 
     @Override
@@ -98,55 +143,4 @@ public class Applyjobs2 extends AppCompatActivity implements View.OnClickListene
     }
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_applyjobs2);
-
-        TextView namaPelamar = findViewById(R.id.nama_pelamar);
-        TextView usia = findViewById(R.id.usia);
-        TextView alamat = findViewById(R.id.alamat);
-        TextView editTextText = findViewById(R.id.editTextText);
-        TextView editTextText2 = findViewById(R.id.editTextText2);
-        TextView editTextText3 = findViewById(R.id.editTextText3);
-        TextView editTextText4 = findViewById(R.id.editTextText4);
-        TextView editTextText5 = findViewById(R.id.editTextText5);
-        TextView editTextText6 = findViewById(R.id.editTextText6);
-        TextView editTextText7 = findViewById(R.id.editTextText7);
-        TextView editTextText8 = findViewById(R.id.editTextText8);
-        TextView editTextText9 = findViewById(R.id.editTextText9);
-        TextView keterangan_tambahan = findViewById(R.id.keterangan_tambahan);
-
-        Intent apply2 = getIntent();
-
-        String teksNamaPelamar = apply2.getStringExtra("namaPelamar");
-        String teksUsia = apply2.getStringExtra("usia");
-        String teksAlamat = apply2.getStringExtra("alamat");
-        String teksEditTextText = apply2.getStringExtra("editTextText");
-        String teksEditTextText2 = apply2.getStringExtra("editTextText2");
-        String teksEditTextText3 = apply2.getStringExtra("editTextText3");
-        String teksEditTextText4 = apply2.getStringExtra("editTextText4");
-        String teksEditTextText5 = apply2.getStringExtra("editTextText5");
-        String teksEditTextText6 = apply2.getStringExtra("editTextText6");
-        String teksEditTextText7 = apply2.getStringExtra("editTextText7");
-        String teksEditTextText8 = apply2.getStringExtra("editTextText8");
-        String teksEditTextText9 = apply2.getStringExtra("editTextText9");
-        String teksKeterangan_tambahan = apply2.getStringExtra("keterangan_tambahan");
-
-        namaPelamar.setText(teksNamaPelamar);
-        usia.setText(teksUsia);
-        alamat.setText(teksAlamat);
-        editTextText.setText(teksEditTextText);
-        editTextText2.setText(teksEditTextText2);
-        editTextText3.setText(teksEditTextText3);
-        editTextText4.setText(teksEditTextText4);
-        editTextText5.setText(teksEditTextText5);
-        editTextText6.setText(teksEditTextText6);
-        editTextText7.setText(teksEditTextText7);
-        editTextText8.setText(teksEditTextText8);
-        editTextText9.setText(teksEditTextText9);
-        keterangan_tambahan.setText(teksKeterangan_tambahan);
-
-    }
 }

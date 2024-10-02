@@ -48,52 +48,6 @@ public class Applyjobs1 extends AppCompatActivity implements View.OnClickListene
         this.btUnggahLowongan = this.findViewById(R.id.UnggahLowongan);
 
         this.btUnggahLowongan.setOnClickListener(Applyjobs1.this);
-    }
-
-    @Override
-    public void onClick(View view) {
-        Intent apply1 = new Intent(this, Applyjobs2.class);
-        String teksRole_besar = this.Role_besar.getText().toString();
-        apply1.putExtra("Role_besar", teksRole_besar);
-
-        String teksPerusahaan = this.Perusahaan.getText().toString();
-        apply1.putExtra("Perusahaan", teksPerusahaan);
-
-        String teksRating = this.rating.getText().toString();
-        apply1.putExtra("rating", teksRating);
-
-        String teksUlasan = this.ulasan.getText().toString();
-        apply1.putExtra("ulasan", teksUlasan);
-
-        String teksRole_inti = this.role_inti.getText().toString();
-        apply1.putExtra("role_inti", teksRole_inti);
-
-        String teksLokasi = this.Lokasi.getText().toString();
-        apply1.putExtra("Lokasi", teksLokasi);
-
-        String teksKerja = this.kerja.getText().toString();
-        apply1.putExtra("kerja", teksKerja);
-
-        String teksBayaran = this.bayaran.getText().toString();
-        apply1.putExtra("bayaran", teksBayaran);
-
-        String teksKeterangan_pekerjaan = this.keterangan_pekerjaan.getText().toString();
-        apply1.putExtra("keterangan_pekerjaan", teksKeterangan_pekerjaan);
-
-        String teksSyarat = this.syarat.getText().toString();
-        apply1.putExtra("syarat", teksSyarat);
-
-        String teksSyarat_rinci = this.syarat_rinci.getText().toString();
-        apply1.putExtra("syarat_rinci", teksSyarat_rinci);
-        startActivity(apply1);
-    }
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_applyjobs1);
 
         TextView Role_besar = findViewById(R.id.Role_besar);
         TextView Perusahaaan = findViewById(R.id.Perusahaan);
@@ -134,4 +88,43 @@ public class Applyjobs1 extends AppCompatActivity implements View.OnClickListene
         syarat_rinci.setText(teksSyarat_rinci);
 
     }
+
+    @Override
+    public void onClick(View view) {
+        Intent apply1 = new Intent(this, Applyjobs2.class);
+        String teksRole_besar = this.Role_besar.getText().toString();
+        apply1.putExtra("Role_besar", teksRole_besar);
+
+        String teksPerusahaan = this.Perusahaan.getText().toString();
+        apply1.putExtra("Perusahaan", teksPerusahaan);
+
+        String teksRating = this.rating.getText().toString();
+        apply1.putExtra("rating", teksRating);
+
+        String teksUlasan = this.ulasan.getText().toString();
+        apply1.putExtra("ulasan", teksUlasan);
+
+        String teksRole_inti = this.role_inti.getText().toString();
+        apply1.putExtra("role_inti", teksRole_inti);
+
+        String teksLokasi = this.Lokasi.getText().toString();
+        apply1.putExtra("Lokasi", teksLokasi);
+
+        String teksKerja = this.kerja.getText().toString();
+        apply1.putExtra("kerja", teksKerja);
+
+        String teksBayaran = this.bayaran.getText().toString();
+        apply1.putExtra("bayaran", teksBayaran);
+
+        String teksKeterangan_pekerjaan = this.keterangan_pekerjaan.getText().toString();
+        apply1.putExtra("keterangan_pekerjaan", teksKeterangan_pekerjaan);
+
+        String teksSyarat = this.syarat.getText().toString();
+        apply1.putExtra("syarat", teksSyarat);
+
+        String teksSyarat_rinci = this.syarat_rinci.getText().toString();
+        apply1.putExtra("syarat_rinci", teksSyarat_rinci);
+        startActivity(apply1);
+    }
+
 }
