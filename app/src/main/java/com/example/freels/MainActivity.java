@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         TextView ringkasanPekerjaan = findViewById(R.id.ringkasanPekerjaan);
         TextView kualfikasiPekerjaan = findViewById(R.id.kualifikasiPekerjaan);
 
+
         Intent i = getIntent();
 
         String teksNamaPerusahaan = i.getStringExtra("namaPerusahaan");

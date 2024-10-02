@@ -16,19 +16,17 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@android:drawable/alert_dark_frame" />
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/back_button"
-                    android:layout_width="55dp"
-                    android:layout_height="45dp"
-                    android:layout_marginStart="35dp"
-                    android:layout_marginTop="20dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@android:drawable/alert_dark_frame" />
 
                 <ImageView
                     android:id="@+id/profile_pic"
@@ -52,7 +50,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
-                        android:id="@+id/Role"
+                        android:id="@+id/Role_besar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="35dp"
@@ -73,7 +71,7 @@
                         android:textSize="20dp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/Role" />
+                        app:layout_constraintTop_toBottomOf="@+id/Role_besar" />
 
                     <TextView
                         android:id="@+id/rating"
@@ -98,7 +96,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/Perusahaan" />
 
                     <TextView
-                        android:id="@+id/role"
+                        android:id="@+id/role_inti"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="70dp"
@@ -178,17 +176,20 @@
                         android:id="@+id/lamar_pekerjaan"
                         android:layout_width="347dp"
                         android:layout_height="60dp"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginTop="660dp"
-                        android:layout_marginEnd="32dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="30dp"
                         android:text="Lamar Pekerjaan"
                         app:circularflow_radiusInDP="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toBottomOf="@+id/keterangan_pekerjaan" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
     </ScrollView>
 

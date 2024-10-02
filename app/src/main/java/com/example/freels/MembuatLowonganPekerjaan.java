@@ -41,7 +41,7 @@ public class MembuatLowonganPekerjaan extends AppCompatActivity implements View.
 
     @Override
     public void onClick(View view) {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, Homepage.class);
         String teksNamaPerusahaan = this.namaPerusahaan.getText().toString();
         i.putExtra("namaPerusahaan", teksNamaPerusahaan);
 
