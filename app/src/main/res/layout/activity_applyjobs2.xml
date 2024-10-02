@@ -8,7 +8,7 @@
     tools:context=".Applyjobs2">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/back_button2"
         android:layout_width="55dp"
         android:layout_height="45dp"
         android:layout_marginStart="35dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@android:drawable/alert_dark_frame" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/profile_pelamar"
         android:layout_width="95dp"
         android:layout_height="90dp"
         android:layout_marginStart="35dp"
@@ -28,7 +28,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/nama_pelamar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -36,28 +36,28 @@
         android:text="Nama Pelamar"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/profile_pelamar"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/usia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="130dp"
         android:text="Usia"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/profile_pelamar"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/alamat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="160dp"
         android:text="Alamat"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/profile_pelamar"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextText2"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:layout_marginStart="35dp"
@@ -88,7 +88,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextText3"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:layout_marginStart="35dp"
@@ -102,7 +102,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextText4"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:layout_marginStart="35dp"
@@ -116,7 +116,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextText5"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:layout_marginStart="35dp"
@@ -130,7 +130,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextText6"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:layout_marginStart="35dp"
@@ -144,7 +144,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextText7"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:layout_marginStart="35dp"
@@ -158,7 +158,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextText8"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:layout_marginStart="35dp"
@@ -172,7 +172,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextText9"
         android:layout_width="340dp"
         android:layout_height="45dp"
         android:layout_marginStart="35dp"
@@ -186,7 +186,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/keterangan_tambahan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
@@ -197,7 +197,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/unggah_lamaran"
         android:layout_width="165dp"
         android:layout_height="55dp"
         android:layout_marginStart="35dp"

@@ -21,7 +21,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/golekkerjo"
                     android:layout_width="350dp"
                     android:layout_height="45dp"
                     android:layout_marginStart="35dp"
@@ -38,51 +38,51 @@
                     android:layout_width="36dp"
                     android:layout_height="32dp"
                     android:layout_marginStart="5dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/button"
-                    app:layout_constraintStart_toStartOf="@+id/button"
-                    app:layout_constraintTop_toTopOf="@+id/button" />
+                    app:layout_constraintBottom_toBottomOf="@+id/golekkerjo"
+                    app:layout_constraintStart_toStartOf="@+id/golekkerjo"
+                    app:layout_constraintTop_toTopOf="@+id/golekkerjo" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/kategori_kerja"
                     android:layout_width="50dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="35dp"
                     android:layout_marginEnd="15dp"
                     android:text="-"
-                    app:layout_constraintEnd_toStartOf="@+id/button3"
+                    app:layout_constraintEnd_toStartOf="@+id/slide_kerja"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button" />
+                    app:layout_constraintTop_toBottomOf="@+id/golekkerjo" />
 
                 <com.google.android.material.chip.ChipGroup
                     android:layout_width="32dp"
                     android:layout_height="17dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/button2"
-                    app:layout_constraintEnd_toEndOf="@+id/button2"
-                    app:layout_constraintStart_toStartOf="@+id/button2"
-                    app:layout_constraintTop_toTopOf="@+id/button2">
+                    app:layout_constraintBottom_toBottomOf="@+id/kategori_kerja"
+                    app:layout_constraintEnd_toEndOf="@+id/kategori_kerja"
+                    app:layout_constraintStart_toStartOf="@+id/kategori_kerja"
+                    app:layout_constraintTop_toTopOf="@+id/kategori_kerja">
 
                 </com.google.android.material.chip.ChipGroup>
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/slide_kerja"
                     android:layout_width="190dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="15dp"
                     android:text="Jenis Pekerjaan"
-                    app:layout_constraintEnd_toStartOf="@+id/button4"
-                    app:layout_constraintTop_toBottomOf="@+id/button" />
+                    app:layout_constraintEnd_toStartOf="@+id/gaji"
+                    app:layout_constraintTop_toBottomOf="@+id/golekkerjo" />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/gaji"
                     android:layout_width="80dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="30dp"
                     android:text="Gaji"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button" />
+                    app:layout_constraintTop_toBottomOf="@+id/golekkerjo" />
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/LogoPerusahaan"
                     android:layout_width="134dp"
                     android:layout_height="62dp"
                     android:layout_marginStart="35dp"
@@ -104,24 +104,23 @@
                     app:cardCornerRadius="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button">
+                    app:layout_constraintTop_toBottomOf="@+id/golekkerjo">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
                         <ImageView
-                            android:id="@+id/imageVie"
+                            android:id="@+id/profile1"
                             android:layout_width="134dp"
                             android:layout_height="62dp"
                             android:layout_marginTop="15dp"
-                            app:layout_constraintStart_toStartOf="@+id/button"
+                            app:layout_constraintStart_toStartOf="@+id/golekkerjo"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/left_arrow_icon"
-                             />
+                            app:srcCompat="@drawable/left_arrow_icon" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/Role1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="35dp"
@@ -130,10 +129,10 @@
                             android:textSize="13dp"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageVie" />
+                            app:layout_constraintTop_toBottomOf="@+id/profile1" />
 
                         <TextView
-                            android:id="@+id/textView4"
+                            android:id="@+id/Perusahaan1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="35dp"
@@ -142,10 +141,10 @@
                             android:textSize="10dp"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                            app:layout_constraintTop_toBottomOf="@+id/Role1" />
 
                         <TextView
-                            android:id="@+id/textView5"
+                            android:id="@+id/lokasi1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="35dp"
@@ -154,7 +153,7 @@
                             android:textSize="9dp"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                            app:layout_constraintTop_toBottomOf="@+id/Perusahaan1" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -178,40 +177,40 @@
                         android:layout_height="match_parent">
 
                         <ImageView
-                            android:id="@+id/imageVie"
+                            android:id="@+id/profile2"
                             android:layout_width="134dp"
                             android:layout_height="62dp"
                             android:layout_marginTop="15dp"
-                            app:layout_constraintStart_toStartOf="@+id/button"
+                            app:layout_constraintStart_toStartOf="@+id/golekkerjo"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:srcCompat="@tools:sample/avatars" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/Role2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="35dp"
                             android:layout_marginTop="10dp"
-                            android:text="Guru Les Matematika"
+                            android:text="Fotografi Wisuda"
                             android:textSize="13dp"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageVie" />
+                            app:layout_constraintTop_toBottomOf="@+id/profile2" />
 
                         <TextView
-                            android:id="@+id/textView4"
+                            android:id="@+id/Perusahaan2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="35dp"
                             android:layout_marginTop="2dp"
-                            android:text="Ruang Guru"
+                            android:text="Fuji"
                             android:textSize="10dp"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                            app:layout_constraintTop_toBottomOf="@+id/Role2" />
 
                         <TextView
-                            android:id="@+id/textView5"
+                            android:id="@+id/lokasi2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="35dp"
@@ -220,7 +219,7 @@
                             android:textSize="9dp"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                            app:layout_constraintTop_toBottomOf="@+id/Perusahaan2" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -243,40 +242,40 @@
                         android:layout_height="match_parent">
 
                         <ImageView
-                            android:id="@+id/imageVie"
+                            android:id="@+id/profile3"
                             android:layout_width="134dp"
                             android:layout_height="62dp"
                             android:layout_marginTop="15dp"
-                            app:layout_constraintStart_toStartOf="@+id/button"
+                            app:layout_constraintStart_toStartOf="@+id/golekkerjo"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:srcCompat="@tools:sample/avatars" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/Role3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="35dp"
                             android:layout_marginTop="10dp"
-                            android:text="Guru Les Matematika"
+                            android:text="Barista"
                             android:textSize="13dp"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageVie" />
+                            app:layout_constraintTop_toBottomOf="@+id/profile3" />
 
                         <TextView
-                            android:id="@+id/textView4"
+                            android:id="@+id/Perusahaan3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="35dp"
                             android:layout_marginTop="2dp"
-                            android:text="Ruang Guru"
+                            android:text="Nakoa"
                             android:textSize="10dp"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                            app:layout_constraintTop_toBottomOf="@+id/Role3" />
 
                         <TextView
-                            android:id="@+id/textView5"
+                            android:id="@+id/lokasi3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="35dp"
@@ -285,7 +284,7 @@
                             android:textSize="9dp"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                            app:layout_constraintTop_toBottomOf="@+id/Perusahaan3" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
