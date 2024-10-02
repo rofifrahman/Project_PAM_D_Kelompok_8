@@ -76,13 +76,10 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/InputPekerjaan" />
 
-                <EditText
-                    android:id="@+id/InputLokasi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:text="Masukan Lokasi Pekerjaan"
+                <Spinner
+                    android:id="@+id/DropDownLokasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Lokasi" />
 
@@ -96,15 +93,12 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/InputLokasi" />
+                    app:layout_constraintTop_toBottomOf="@+id/DropDownLokasi" />
 
-                <EditText
-                    android:id="@+id/InputJenisPekerjaan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:text="Masukan Jenis Pekerjaan"
+                <Spinner
+                    android:id="@+id/DropDownJenisPekerjaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/JenisPekerjaan" />
 
@@ -118,7 +112,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/InputJenisPekerjaan" />
+                    app:layout_constraintTop_toBottomOf="@+id/DropDownJenisPekerjaan" />
 
                 <EditText
                     android:id="@+id/InputGajiMinimum"
