@@ -58,5 +58,6 @@ public class BetaHomePage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
