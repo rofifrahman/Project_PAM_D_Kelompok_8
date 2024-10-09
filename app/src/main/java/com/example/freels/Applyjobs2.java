@@ -100,7 +100,7 @@ public class Applyjobs2 extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View view) {
-        Intent apply2 = new Intent(this, Homepage.class);
+        Intent apply2 = new Intent(this, HomePage.class);
         String TeksNamaPelamar = this.namaPelamar.getText().toString();
         apply2.putExtra("namaPelamar", TeksNamaPelamar);
 
